@@ -1,0 +1,115 @@
+.btn{
+    height: 150px;
+    width: 150px;
+    border-radius: 30px;
+    border: 4px solid black;
+    margin: 3px;
+
+}
+.container{
+       display: flex;
+    justify-content: center;
+}
+body{
+    text-align: center;
+}
+
+
+.red{
+    background-color: rgb(216, 99, 99);
+}
+.yellow{
+    background-color: rgb(238, 238, 128);
+}
+.green{
+    background-color: rgb(89, 159, 89);
+}
+.purple{
+    background-color: rgb(149, 98, 149);
+}
+.flash{
+    background-color: white;
+}
+.userflash{
+    background-color: greenyellow;
+}
+
+
+
+
+#startAnimation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: #00ff4c;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+
+    transform: scale(0.2);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.start-show {
+    animation: zoomStart 2s ease forwards;
+}
+.end-show {
+    animation: zoomStart 3s ease forwards;
+}
+
+#endAnimation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    font-weight: bold;
+    color: #e82e2e;
+
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+
+    transform: scale(0.2);
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+@keyframes zoomStart {
+    0% {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    30% {
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+
+
